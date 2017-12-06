@@ -1,0 +1,10 @@
+*.pyc
+.DS_Store
+*~
+*.fls
+*.aux
+*.pdf
+*.fdb_latexmk
+project_report/auto/*
+proposal/auto/*
+*.log
