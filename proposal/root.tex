@@ -1,4 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %2345678901234567890123456789012345678901234567890123456789012345678901234567890
 %        1         2         3         4         5         6         7         8
 
@@ -22,8 +23,10 @@
 %\usepackage{amsmath} % assumes amsmath package installed
 %\usepackage{amssymb}  % assumes amsmath package installed
 
+%\usepackage{natbib}
+
 \title{\LARGE \bf
-Feedback Linearization for Underactuated 7-DOF Planar Bipedal Robot}
+Feedback Linearization for Underactuated 7-DOF Planar Bipedal Robot \\ Project Proposal}
 
 
 \author{Bilal Hammoud \\ bah436@nyu.edu}
@@ -37,20 +40,26 @@ Feedback Linearization for Underactuated 7-DOF Planar Bipedal Robot}
 \thispagestyle{empty}
 \pagestyle{empty}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
   In this project we aim to use to technique of feedback linearization to generate a stable periodic walking motion for a highly nonlinear system with hybrid dynamics, namely a 5 link bipedal robot modeled in a plane. The robot has a total of 5 controlled joints and a total of 7 degrees of freedom.
  
 \end{abstract}
-
+ 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{INTRODUCTION}
+\section{Project Summary}
+
+The field of bipedal robotics has been around for a while very interesting but challenging, it started with the famous Honda P2 robot. However it is still one of the most challenging problems to be solved. Simple cases of have been addressed, such as periodic walking on flat terrian of compleletly known nature. Some people have attempted squating, carrying and manipulating objects.
+The aim of this project is to implement the controller developed by Plestan et al. in \cite{plestan2003stable}. In order to generate a controller for stable walking gait for bipedal robots the authors use the method of feedback linearization with a proper choice of coordinates and output function that lead to a closed loop system with stable zero dynamics that refer to a periodic walk. The results of this work are extended in \cite{chevallereau2005asymptotically} to the case of running bipedal robots. The concept of hybrid zero dynamics was introduced by Westervelt in \cite{westervelt2002zero}. Most of the work done by grizzle on basic modeling and control tools applied to bipedal walking were summarized in \cite{westervelt2007feedback} which was of great help in understanding in more details some of the concepts discussed in the papers.
 
 
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
 
 \end{document}
+
+
 
 %%% Local Variables:
 %%% mode: latex
